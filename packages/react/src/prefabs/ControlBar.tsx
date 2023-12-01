@@ -119,7 +119,7 @@ export function ControlBar({
             showIcon={showIcon}
             onChange={saveAudioInputEnabled}
           >
-            {showText && 'Microphone'}
+            {/* {showText && 'Microphone'} */}
           </TrackToggle>
           <div className="lk-button-group-menu">
             <MediaDeviceMenu
@@ -136,7 +136,7 @@ export function ControlBar({
             showIcon={showIcon}
             onChange={saveVideoInputEnabled}
           >
-            {showText && 'Camera'}
+            {/* {showText && 'Camera'} */}
           </TrackToggle>
           <div className="lk-button-group-menu">
             <MediaDeviceMenu
@@ -146,7 +146,7 @@ export function ControlBar({
           </div>
         </div>
       )}
-      {visibleControls.screenShare && browserSupportsScreenSharing && (
+      {/* {visibleControls.screenShare && browserSupportsScreenSharing && (
         <TrackToggle
           source={Track.Source.ScreenShare}
           captureOptions={{ audio: true, selfBrowserSurface: 'include' }}
@@ -155,17 +155,17 @@ export function ControlBar({
         >
           {showText && (isScreenShareEnabled ? 'Stop screen share' : 'Share screen')}
         </TrackToggle>
-      )}
-      {visibleControls.chat && (
+      )} 
+       {visibleControls.chat && (
         <ChatToggle>
           {showIcon && <ChatIcon />}
           {showText && 'Chat'}
         </ChatToggle>
-      )}
+      )} */}
       {visibleControls.leave && (
         <DisconnectButton>
           {showIcon && <LeaveIcon />}
-          {showText && 'Leave'}
+          {/* {showText && 'Leave'} */}
         </DisconnectButton>
       )}
       <StartMediaButton />
